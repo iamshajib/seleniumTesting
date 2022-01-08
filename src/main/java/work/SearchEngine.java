@@ -21,10 +21,7 @@ public class SearchEngine {
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Amex");
 		Thread.sleep(1000);
 		
-		//clicking on the first link from the dropdown
-//		driver.findElement(By.xpath("//ul[@role='listbox']//li[1]")).click();
-		
-		//making it with for loop and conditional statement to 
+		//iterating through the list and clicking on the desired result
 		List<WebElement> searchResults = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='wM6W7d']"));
 		System.out.println(searchResults.size());
 		
@@ -35,13 +32,10 @@ public class SearchEngine {
 				break;
 			}
 		}
-		
 		Thread.sleep(1000);
+		
 		//clicking on the first content from the search result not the ad
 		driver.findElement(By.xpath("//h3[@class='LC20lb MBeuO DKV0Md']")).click();
-		Thread.sleep(1000);
-		
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		//get page title and page URL
@@ -60,10 +54,10 @@ public class SearchEngine {
 			System.out.println(linksText);
 		}
 
-		//print all the inactive links available on the web page
+		//print all the broken links available on the web page
 		
 		//closing the browser after the action is done
-		//driver.quit();
+		driver.quit();
 	
 		
 	}
