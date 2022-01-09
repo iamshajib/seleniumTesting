@@ -165,9 +165,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.0.0-beta-1&apos;, revision: &apos;9c03156c2b&apos;
 System info: host: &apos;MOHAMMEDs-MBP&apos;, ip: &apos;fe80:0:0:0:449:791b:2d85:3967%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f5d42778e7afd5de6c9457efc8d3ceb, findElement {using=xpath, value=//h3[@class=&apos;LC20lb MBeuO DKV0Md&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/mh/j8nlfc5d1mn...}, goog:chromeOptions: {debuggerAddress: localhost:54098}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f5d42778e7afd5de6c9457efc8d3ceb
+Command: [a00ab06e78213e1b33ab6d8e0bfd8ba4, findElement {using=xpath, value=//h3[@class=&apos;LC20lb MBeuO DKV0Md&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/mh/j8nlfc5d1mn...}, goog:chromeOptions: {debuggerAddress: localhost:54312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a00ab06e78213e1b33ab6d8e0bfd8ba4
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -183,7 +183,7 @@ Session ID: 3f5d42778e7afd5de6c9457efc8d3ceb
 	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-	at testNGTesting.GoogleSearchTestNG.clickOnLink(GoogleSearchTestNG.java:56)
+	at testNGTesting.GoogleSearchTestNG.clickOnLink(GoogleSearchTestNG.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -257,7 +257,7 @@ Session ID: 3f5d42778e7afd5de6c9457efc8d3ceb
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/mh/j8nlfc5d1mn2lh163p_jm56c0000gn/T/testng-eclipse-1134774862/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/mh/j8nlfc5d1mn2lh163p_jm56c0000gn/T/testng-eclipse--1321964002/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -310,23 +310,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'search')
 data.setCell(0, 2, 'testNGTesting.GoogleSearchTestNG')
-data.setCell(0, 3, 3093);
+data.setCell(0, 3, 3107);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'clickOnResult')
 data.setCell(1, 2, 'testNGTesting.GoogleSearchTestNG')
-data.setCell(1, 3, 1022);
+data.setCell(1, 3, 1024);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'linkSizeAndTitle')
 data.setCell(2, 2, 'testNGTesting.GoogleSearchTestNG')
-data.setCell(2, 3, 244);
+data.setCell(2, 3, 201);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'clickOnLink')
 data.setCell(3, 2, 'testNGTesting.GoogleSearchTestNG')
-data.setCell(3, 3, 32);
+data.setCell(3, 3, 31);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'getTitleUrl')
 data.setCell(4, 2, 'testNGTesting.GoogleSearchTestNG')
-data.setCell(4, 3, 15);
+data.setCell(4, 3, 14);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -366,59 +366,59 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clickOnLink</span>
-                <span class="method-start">5999 ms</span>
+                <span class="method-start">6373 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">6035 ms</span>
+                <span class="method-start">6408 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserOpen</span>
-                <span class="method-start">6131 ms</span>
+                <span class="method-start">6504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnResult</span>
-                <span class="method-start">11388 ms</span>
+                <span class="method-start">11779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">12411 ms</span>
+                <span class="method-start">12804 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserOpen</span>
-                <span class="method-start">12502 ms</span>
+                <span class="method-start">12897 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getTitleUrl</span>
-                <span class="method-start">17781 ms</span>
+                <span class="method-start">18195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">17797 ms</span>
+                <span class="method-start">18210 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserOpen</span>
-                <span class="method-start">17891 ms</span>
+                <span class="method-start">18315 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">linkSizeAndTitle</span>
-                <span class="method-start">23194 ms</span>
+                <span class="method-start">23673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">23439 ms</span>
+                <span class="method-start">23875 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserOpen</span>
-                <span class="method-start">23531 ms</span>
+                <span class="method-start">23962 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">search</span>
-                <span class="method-start">28845 ms</span>
+                <span class="method-start">29173 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">31939 ms</span>
+                <span class="method-start">32281 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
