@@ -6,7 +6,7 @@
       <class name="testNGTesting.GoogleSearchTestNG">
         <methods>
           <include name="browserOpen"/>
-          <include name="search"/>
+          <include name="clickOnLink"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- testNGTesting.GoogleSearchTestNG -->

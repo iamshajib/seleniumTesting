@@ -1,6 +1,7 @@
 package testNGTesting;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -48,7 +49,42 @@ public class GoogleSearchTestNG {
 		}
 		Thread.sleep(1000);
 	}
+	
+	//3rd case | click on the first content from the search result not the AD
+	
+	/* FAILING: <NoSuchElementException: no such element: Unable to locate element:
+	 * {"method":"xpath","selector":"//h3[@class='LC20lb MBeuO DKV0Md']> 
+	 * This locator works if I "run as" Java without TestNG. After creating it a separate 
+	 * test case the xpath is not working*/
+	
+	@Test
+	public void clickOnLink() throws InterruptedException {
+		driver.findElement(By.xpath("//h3[@class='LC20lb MBeuO DKV0Md']")).click();
+		Thread.sleep(1000);
+	}
 
+	//4th case | get page title and page URL
+	@Test
+	public void getTitleUrl() {
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
+	}
+	
+	//5th case | print how many links are available on this page and print their titles
+	@Test
+	public void linkSizeAndTitle() {
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		int linksCount = links.size();
+		
+		System.out.println("Total number of links in this page is " + linksCount);
+		
+		for(int i = 1; i < linksCount; i++) {
+			WebElement storage = links.get(i);
+			String linksText = storage.getText();
+			System.out.println(linksText);
+		}
+	}
 	
 	//browser close
 	@AfterMethod
