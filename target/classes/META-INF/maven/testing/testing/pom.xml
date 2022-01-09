@@ -5,12 +5,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>SeleniumTesting</name>
   
+  
     <dependencies>
+    
+    <!-- selenium -->
 	  <dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.0.0-beta-1</version>
 	</dependency>
+	
+	<!-- tentNG -->
+	<dependency>
+	  <groupId>org.testng</groupId>
+	  <artifactId>testng</artifactId>
+	  <version>7.5</version>
+	  <scope>test</scope>
+	</dependency>
+	
 </dependencies>
+
+
 
 </project>

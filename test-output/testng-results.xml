@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-08T22:56:11 EST" name="Default suite" finished-at="2022-01-08T22:56:26 EST" duration-ms="15027">
+    <groups>
+    </groups>
+    <test started-at="2022-01-08T22:56:11 EST" name="Default test" finished-at="2022-01-08T22:56:26 EST" duration-ms="15027">
+      <class name="testNGTesting.GoogleSearchTestNG">
+        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@15bbf42f]" started-at="2022-01-08T22:56:11 EST" name="browserOpen" finished-at="2022-01-08T22:56:17 EST" duration-ms="5817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserOpen -->
+        <test-method signature="clickOnResult()[pri:0, instance:testNGTesting.GoogleSearchTestNG@15bbf42f]" started-at="2022-01-08T22:56:17 EST" name="clickOnResult" finished-at="2022-01-08T22:56:18 EST" duration-ms="1026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnResult -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@15bbf42f]" started-at="2022-01-08T22:56:18 EST" name="closeBrowser" finished-at="2022-01-08T22:56:18 EST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@15bbf42f]" started-at="2022-01-08T22:56:18 EST" name="browserOpen" finished-at="2022-01-08T22:56:23 EST" duration-ms="4882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserOpen -->
+        <test-method signature="search()[pri:0, instance:testNGTesting.GoogleSearchTestNG@15bbf42f]" started-at="2022-01-08T22:56:23 EST" name="search" finished-at="2022-01-08T22:56:26 EST" duration-ms="3091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@15bbf42f]" started-at="2022-01-08T22:56:26 EST" name="closeBrowser" finished-at="2022-01-08T22:56:26 EST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testNGTesting.GoogleSearchTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
