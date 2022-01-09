@@ -20,7 +20,7 @@ public class GoogleSearchTestNG {
 	@BeforeMethod
 	public void browserOpen() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/shajib/Documents/study/QA/development/java/Exercise/Shajib/chromedriver");
+				"/Users/shajib/Documents/study/QA/development/java/Exercise/testing/chromedriver");
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();

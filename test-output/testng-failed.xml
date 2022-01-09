@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGTesting.GoogleSearchTestNG">
+      <class name="testNGTesting.Cvs">
         <methods>
+          <include name="householdNav"/>
           <include name="browserOpen"/>
-          <include name="clickOnLink"/>
-          <include name="closeBrowser"/>
+          <include name="browserClose"/>
         </methods>
-      </class> <!-- testNGTesting.GoogleSearchTestNG -->
+      </class> <!-- testNGTesting.Cvs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

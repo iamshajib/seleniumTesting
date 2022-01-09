@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-09T10:03:36 EST" name="Default suite" finished-at="2022-01-09T10:04:09 EST" duration-ms="33121">
+  <suite started-at="2022-01-09T11:42:42 EST" name="Default suite" finished-at="2022-01-09T11:42:55 EST" duration-ms="12335">
     <groups>
     </groups>
-    <test started-at="2022-01-09T10:03:36 EST" name="Default test" finished-at="2022-01-09T10:04:09 EST" duration-ms="33121">
-      <class name="testNGTesting.GoogleSearchTestNG">
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:36 EST" name="browserOpen" finished-at="2022-01-09T10:03:42 EST" duration-ms="5983" status="PASS">
+    <test started-at="2022-01-09T11:42:42 EST" name="Default test" finished-at="2022-01-09T11:42:55 EST" duration-ms="12335">
+      <class name="testNGTesting.Cvs">
+        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.Cvs@15bbf42f]" started-at="2022-01-09T11:42:42 EST" name="browserOpen" finished-at="2022-01-09T11:42:46 EST" duration-ms="3360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserOpen -->
-        <test-method signature="clickOnLink()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:42 EST" name="clickOnLink" finished-at="2022-01-09T10:03:42 EST" duration-ms="31" status="FAIL">
+        <test-method signature="householdNav()[pri:0, instance:testNGTesting.Cvs@15bbf42f]" started-at="2022-01-09T11:42:46 EST" name="householdNav" finished-at="2022-01-09T11:42:49 EST" duration-ms="3059" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'American Express Credit Cards, Rewards & Banking')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[4]"}
   (Session info: chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
 System info: host: 'MOHAMMEDs-MBP', ip: 'fe80:0:0:0:449:791b:2d85:3967%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d021cf11e1fc6638f9b034204b10df93, findElement {using=xpath, value=//h3[contains(text(),'American Express Credit Cards, Rewards & Banking')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/mh/j8nlfc5d1mn...}, goog:chromeOptions: {debuggerAddress: localhost:56128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d021cf11e1fc6638f9b034204b10df93]]>
+Command: [944659669cc0e76185af6f204f4f707c, findElement {using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/mh/j8nlfc5d1mn...}, goog:chromeOptions: {debuggerAddress: localhost:56955}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 944659669cc0e76185af6f204f4f707c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'American Express Credit Cards, Rewards & Banking')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[4]"}
   (Session info: chrome=97.0.4692.71)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-beta-1', revision: '9c03156c2b'
 System info: host: 'MOHAMMEDs-MBP', ip: 'fe80:0:0:0:449:791b:2d85:3967%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d021cf11e1fc6638f9b034204b10df93, findElement {using=xpath, value=//h3[contains(text(),'American Express Credit Cards, Rewards & Banking')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/mh/j8nlfc5d1mn...}, goog:chromeOptions: {debuggerAddress: localhost:56128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d021cf11e1fc6638f9b034204b10df93
+Command: [944659669cc0e76185af6f204f4f707c, findElement {using=xpath, value=/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/mh/j8nlfc5d1mn...}, goog:chromeOptions: {debuggerAddress: localhost:56955}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 944659669cc0e76185af6f204f4f707c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,7 +49,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
 at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1255)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:388)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at testNGTesting.GoogleSearchTestNG.clickOnLink(GoogleSearchTestNG.java:65)
+at testNGTesting.Cvs.householdNav(Cvs.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,60 +83,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnLink -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:42 EST" name="closeBrowser" finished-at="2022-01-09T10:03:42 EST" duration-ms="135" status="PASS">
+        </test-method> <!-- householdNav -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testNGTesting.Cvs@15bbf42f]" started-at="2022-01-09T11:42:49 EST" name="browserClose" finished-at="2022-01-09T11:42:49 EST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:42 EST" name="browserOpen" finished-at="2022-01-09T10:03:50 EST" duration-ms="7941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserOpen -->
-        <test-method signature="clickOnResult()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:50 EST" name="clickOnResult" finished-at="2022-01-09T10:03:50 EST" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnResult -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:50 EST" name="closeBrowser" finished-at="2022-01-09T10:03:50 EST" duration-ms="90" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:50 EST" name="browserOpen" finished-at="2022-01-09T10:03:55 EST" duration-ms="5187" status="PASS">
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.Cvs@15bbf42f]" started-at="2022-01-09T11:42:49 EST" name="browserOpen" finished-at="2022-01-09T11:42:52 EST" duration-ms="3185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserOpen -->
-        <test-method signature="getTitleUrl()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:55 EST" name="getTitleUrl" finished-at="2022-01-09T10:03:55 EST" duration-ms="13" status="PASS">
+        <test-method signature="shopNav()[pri:0, instance:testNGTesting.Cvs@15bbf42f]" started-at="2022-01-09T11:42:52 EST" name="shopNav" finished-at="2022-01-09T11:42:55 EST" duration-ms="2352" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitleUrl -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:55 EST" name="closeBrowser" finished-at="2022-01-09T10:03:55 EST" duration-ms="91" status="PASS">
+        </test-method> <!-- shopNav -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testNGTesting.Cvs@15bbf42f]" started-at="2022-01-09T11:42:55 EST" name="browserClose" finished-at="2022-01-09T11:42:55 EST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:03:55 EST" name="browserOpen" finished-at="2022-01-09T10:04:00 EST" duration-ms="5054" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserOpen -->
-        <test-method signature="linkSizeAndTitle()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:04:00 EST" name="linkSizeAndTitle" finished-at="2022-01-09T10:04:00 EST" duration-ms="197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkSizeAndTitle -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:04:00 EST" name="closeBrowser" finished-at="2022-01-09T10:04:00 EST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="browserOpen()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:04:00 EST" name="browserOpen" finished-at="2022-01-09T10:04:05 EST" duration-ms="5072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserOpen -->
-        <test-method signature="search()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:04:05 EST" name="search" finished-at="2022-01-09T10:04:09 EST" duration-ms="3087" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testNGTesting.GoogleSearchTestNG@247d8ae]" started-at="2022-01-09T10:04:09 EST" name="closeBrowser" finished-at="2022-01-09T10:04:09 EST" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testNGTesting.GoogleSearchTestNG -->
+        </test-method> <!-- browserClose -->
+      </class> <!-- testNGTesting.Cvs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
