@@ -22,23 +22,18 @@ public class GoogleSearchTestNG {
 				"/Users/shajib/Documents/study/QA/development/java/Exercise/Shajib/chromedriver");
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-//		driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
 	}
-	
-//	@Test
-//	public void goToGoogle() throws InterruptedException {
-//		driver.get("https://www.google.com/");
-//		Thread.sleep(3000);
-//	}
 
-	
+	//1st case | search keyword
 	@Test
 	public void search() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Amex");
 		Thread.sleep(3000);
 	}
 	
+	//2nd case | click from the dropdown
 	@Test
 	public void clickOnResult() throws InterruptedException {
 		List<WebElement> searchResults = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='wM6W7d']"));
@@ -55,7 +50,7 @@ public class GoogleSearchTestNG {
 	}
 
 	
-	
+	//browser close
 	@AfterMethod
 	public void closeBrowser() {
 		driver.quit();
