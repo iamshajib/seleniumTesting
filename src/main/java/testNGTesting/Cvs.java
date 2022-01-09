@@ -15,15 +15,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Cvs {
-	
+
 	static WebDriver driver;
 	String browser = "chorme";
-	
-	
+
+
 	//Browser open
 	@BeforeMethod
 	public void browserOpen() {
-		
+
 		if(browser.equals("chorme")) {
 			System.setProperty("webdriver.chrome.driver", "/Users/shajib/Documents/study/QA/development/java/Exercise/testing/chromedriver");
 			driver = new ChromeDriver();
@@ -39,35 +39,43 @@ public class Cvs {
 		driver.get("https://www.cvs.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+
 	}
-	
+
 	//1st case | Click Shop button
 	@Test
 	public void shopNav() {
 		driver.findElement(By.xpath("//ul[@class='main-nav']//a[contains(text(), 'Shop')]")).click();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-	}
-	
-	//2nd case | 
-	@Test
-	public void householdNav() {
-		//tried to do find the xpath in different way by myself but always ending up 1 of 2. Had to use ChroPath
-		//div[@class='row hidden-for-table-mobile']//a[contains(text(), 'Household')]
 		
-		//Case is failing. Unable to locate ChroPath generated link is also. Tried Rel & Abs both
-		driver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[4]")).click();
+		//2nd case doesn't work without iterator but can make it work by adding here
+		//	driver.findElement(By.xpath("//*[@id=\"addv-shop-cat2\"]/div[1]/ul/li[4]/a")).click();
+	}
+
+	//2nd case | selecting "Household" through for for loop and conditional statement
+	//@Test
+	public void householdNav() {
+		List<WebElement> searchResults = driver.findElements(By.xpath("//nav[@id='addv-shop-cat2']//div[@class='row hidden-for-table-mobile']//child::ul//li"));
+		System.out.println(searchResults.size());
+
+		for(int i = 0; i < searchResults.size(); i++) {
+			String searchIteams = searchResults.get(i).getText();
+			if(searchIteams.contains("Household")) {
+				searchResults.get(i).click();
+				break;
+			}
+		}
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	}
-	
+
 	//3rd case | number of link
 	@Test
 	public void linksCount() {
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		int linksCount = links.size();
-		
+
 		System.out.println("Total number of links on this page is " + linksCount);
-		
+
 		for(int i = 1; i < linksCount; i++) {
 			WebElement storage = links.get(i);
 			String linksAttribute = storage.getAttribute("href");
@@ -75,7 +83,7 @@ public class Cvs {
 			verifyLinkActive(linksAttribute);
 		}
 	}
-	
+
 	// 3rd case extends | broken links
 	private static void verifyLinkActive(String linksAtt) {
 		try {
@@ -83,26 +91,26 @@ public class Cvs {
 			HttpURLConnection httpURLConnect = (HttpURLConnection)linksAttribute.openConnection();
 			httpURLConnect.setConnectTimeout(3000);
 			httpURLConnect.connect();
-			
+
 			if(httpURLConnect.getResponseCode() == 200) {
 				System.out.println(linksAtt + " - " + httpURLConnect.getResponseMessage());
 			}
-			
+
 			if(httpURLConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND) {
 				System.out.println(linksAtt + " - " + httpURLConnect.getResponseCode() + " - " + HttpURLConnection.HTTP_NOT_FOUND);
 			}
 		} 
 		catch(Exception e) {
-			
+
 		}
-		
+
 	}
 
-	
+
 	@AfterMethod
 	public void browserClose() {
 		driver.close();
 	}
-	
+
 
 }

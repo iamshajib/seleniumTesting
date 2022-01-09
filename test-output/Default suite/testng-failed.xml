@@ -5,7 +5,6 @@
     <classes>
       <class name="testNGTesting.Cvs">
         <methods>
-          <include name="verifyLinkActive"/>
           <include name="householdNav"/>
           <include name="browserOpen"/>
           <include name="browserClose"/>
