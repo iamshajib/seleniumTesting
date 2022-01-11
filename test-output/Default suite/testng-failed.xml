@@ -5,7 +5,7 @@
     <classes>
       <class name="testNGTesting.Cvs">
         <methods>
-          <include name="householdNav"/>
+          <include name="iFrameClicking"/>
           <include name="browserOpen"/>
           <include name="browserClose"/>
         </methods>

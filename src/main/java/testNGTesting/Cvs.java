@@ -105,6 +105,13 @@ public class Cvs {
 		}
 
 	}
+	
+	@Test
+	public void iFrameClicking() {
+//		/html/body/app-root/div/cvs-footer-container/footer/div/section[1]/div[1]/cvs-link-block//div[1]/ul/li[1]/a
+		driver.switchTo().frame(driver.findElement(By.xpath("/html/body/app-root/div/cvs-footer-container/footer/div/section[1]/div[1]/cvs-link-block//div[1]")));
+		driver.findElement(By.xpath("/html/body/app-root/div/cvs-footer-container/footer/div/section[1]/div[1]/cvs-link-block//div[1]/ul/li[1]/a")).click();
+	}
 
 
 	@AfterMethod
