@@ -49,7 +49,7 @@ public class GoogleSearchTestNG {
 			}
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//h3[contains(text(), 'American Express Credit Cards, Rewards & Banking')]"));
+		driver.findElement(By.xpath("//h3[contains(text(), 'American Express Credit Cards, Rewards & Banking')]")).click();
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}

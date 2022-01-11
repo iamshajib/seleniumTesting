@@ -49,11 +49,11 @@ public class Cvs {
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		
 		//2nd case doesn't work without iterator but can make it work by adding here
-		//	driver.findElement(By.xpath("//*[@id=\"addv-shop-cat2\"]/div[1]/ul/li[4]/a")).click();
+//			driver.findElement(By.xpath("//*[@id=\"addv-shop-cat2\"]/div[1]/ul/li[4]/a")).click();
 	}
 
 	//2nd case | selecting "Household" through for for loop and conditional statement
-	//@Test
+	@Test
 	public void householdNav() {
 		List<WebElement> searchResults = driver.findElements(By.xpath("//nav[@id='addv-shop-cat2']//div[@class='row hidden-for-table-mobile']//child::ul//li"));
 		System.out.println(searchResults.size());
