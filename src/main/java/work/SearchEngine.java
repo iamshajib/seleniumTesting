@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SearchEngine {
 	public static void main(String[] args) throws InterruptedException {
 		
-		//open the browser
+		//open the browser 
 		WebDriver driver = new ChromeDriver();
 		System.setProperty("webdriver.chrome.driver",
 				"/Users/shajib/Documents/study/QA/development/java/Exercise/Shajib/chromedriver");
@@ -18,7 +18,7 @@ public class SearchEngine {
 		driver.manage().window().maximize();
 		Thread.sleep(1000);
 		
-		//search the keyword on Google
+		//search the keyword on Google 
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Amex");
 		Thread.sleep(1000);
 		
